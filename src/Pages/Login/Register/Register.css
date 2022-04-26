@@ -1,0 +1,96 @@
+/** @format */
+/** @format */
+
+.customContainer {
+  position: relative;
+  width: 350px;
+  margin: 80px auto;
+  padding: 20px 40px 40px;
+  border-radius: 7px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 20px;
+  text-align: auto;
+  display: flex;
+  justify-content: space-around;
+  border: 0;
+  box-shadow: 0 0 0;
+  height: 40px;
+  border-bottom: 2px solid gray;
+  font-weight: bold;
+  background: white;
+}
+
+.form-box .login {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  height: 40px;
+  border-radius: 25px;
+  background: #efefef;
+  border-color: white;
+  cursor: pointer;
+}
+
+.form-box .facebook {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border-color: #357ebd;
+  border-radius: 25px;
+  background: #3b5998;
+  color: #fff;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  padding-top: 2px;
+}
+
+.maincontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  padding-top: 0;
+}
+
+.imagetop {
+  /* background: url(../images/logom.png); */
+  border-radius: 50%;
+  width: 150px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.avatar {
+  /* background: url(../images/logom.png); */
+  width: 100px;
+  height: 100px;
+  margin: 10px auto 30px;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  word-spacing: 10px;
+}
+
+.tex {
+  color: gray;
+  font-family: "Times New Roman";
+}
