@@ -32,7 +32,7 @@ a {
 .s-layout {
   display: flex;
   width: 100%;
-  min-height: 120vh;
+  min-height: 110vh;
 }
 /* logo underline */
 a {

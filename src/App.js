@@ -13,6 +13,13 @@ import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import About from "./Pages/Home/About/About";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+import Payment from "./Pages/Dashboard/Payment/Payment";
+import MyOrder from "./Pages/Dashboard/MyOrder/MyOrder";
+import Review from "./Pages/Dashboard/Review/Review";
+import ManageAllOrder from "./Pages/Dashboard/ManageAllOrders/ManageAllOrder";
+import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
+import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
+import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 
 function App() {
   return (
@@ -22,7 +29,15 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/dashboard' element={<Dashboard />}></Route>
+          <Route path='/dashboard' element={<Dashboard />}>
+            <Route path='payment' element={<Payment />} />
+            <Route path='myOrder' element={<MyOrder />} />
+            <Route path='review' element={<Review />} />
+            <Route path='manageAllOrder' element={<ManageAllOrder />} />
+            <Route path='addProduct' element={<AddProduct />} />
+            <Route path='makeAdmin' element={<MakeAdmin />} />
+            <Route path='manageProduct' element={<ManageProduct />} />
+          </Route>
           {/* <Route path='/about' element={<About />} /> */}
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />}></Route>

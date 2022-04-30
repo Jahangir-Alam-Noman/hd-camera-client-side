@@ -2,9 +2,11 @@
 
 import React from "react";
 import { Table } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Dashboard.css";
+import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import Payment from "../Payment/Payment";
 
 const Dashboard = () => {
   const { logOut } = useAuth();
@@ -30,22 +32,60 @@ const Dashboard = () => {
                 </Link>
               </li>
               <li>
-                <a className='s-sidebar__nav-link' href='#0'>
-                  <i className='fa fa-user'></i>
-                  <em>My Profile</em>
-                </a>
+                <Link to='payment'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-shopping-cart'></i>
+                    <em>Payment</em>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className='s-sidebar__nav-link' href='#0'>
-                  <i className='fa fa-camera'></i>
-                  <em>Camera</em>
-                </a>
+                <Link to='myOrder'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-first-order'></i>
+                    <em>My Order</em>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className='s-sidebar__nav-link' href='#0'>
-                  <i className='fa fa-user'></i>
-                  <em>My Profile</em>
-                </a>
+                <Link to='review'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-bars'></i>
+                    <em>Review</em>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link to='manageAllOrder'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-sort'></i>
+                    <em>ManageAllOrder</em>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link to='addProduct'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-product-hunt'></i>
+                    <em>Add Product</em>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link to='makeAdmin'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-lock'></i>
+                    <em>Make Admin</em>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link to='manageProduct'>
+                  <a className='s-sidebar__nav-link' href='#0'>
+                    <i className='fa fa-user'></i>
+                    <em>ManageProduct</em>
+                  </a>
+                </Link>
               </li>
               <li>
                 <a className='s-sidebar__nav-link' href='#0'>
@@ -63,41 +103,7 @@ const Dashboard = () => {
 
         {/* Content */}
         <main className='s-layout__content'>
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Username</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </Table>
+          <Outlet />
         </main>
       </div>
     </div>
