@@ -5,8 +5,8 @@ import "./Payment.css";
 
 const Payment = () => {
   return (
-    <div>
-      <h2>This is Payment Page</h2>
+    <div className="payment">
+      <h2>Payment System Coming Soon......</h2>
     </div>
   );
 };

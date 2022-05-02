@@ -7,21 +7,21 @@ import newsletter1 from "../../../images/products/product-7.jpg";
 const NewsLetter = () => {
   return (
     <div>
-      <section class='newsletter'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-sm-8 pt-5 '>
-              <div class='content'>
+      <section className='newsletter'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-sm-8 pt-5 '>
+              <div className='content'>
                 <form>
                   <h2 className='fw-bolder'>SUBSCRIBE OUR NEWSLETTER</h2>
-                  <div class='input-group'>
+                  <div className='input-group'>
                     <input
                       type='email'
-                      class='form-control'
+                      className='form-control'
                       placeholder='Enter your email'
                     />
-                    <span class='input-group-btn'>
-                      <button class='btn' type='submit'>
+                    <span className='input-group-btn'>
+                      <button className='btn' type='submit'>
                         Subscribe Now
                       </button>
                     </span>
@@ -29,8 +29,8 @@ const NewsLetter = () => {
                 </form>
               </div>
             </div>
-            <div class='col-sm-4 '>
-              <div class='content'>
+            <div className='col-sm-4 '>
+              <div className='content'>
                 <img src={newsletter1} alt='' className='img-fluid' />
               </div>
             </div>

@@ -1,12 +1,9 @@
 /** @format */
 
 import React from "react";
-import { Table } from "react-bootstrap";
-// import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Dashboard.css";
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
-import Payment from "../Payment/Payment";
+import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   const { logOut } = useAuth();
@@ -18,16 +15,10 @@ const Dashboard = () => {
           <a className='s-sidebar__trigger' href='#0'>
             <i className='fa fa-bars'></i>
           </a>
-
           <nav className='s-sidebar__nav'>
             <ul>
               <li>
                 <Link to='/home' className='text-decoration-none'>
-                  {/* <a className='s-sidebar__nav-link' href='#0'>
-                    <i className='fa fa-home'></i>
-                    <em>Home</em>
-                  </a> */}
-                  {/* <img src={logo} alt='' className='ms-5' /> */}
                   <h1 className='text-white fw-bolder ms-5 '>Garcia</h1>
                 </Link>
               </li>
